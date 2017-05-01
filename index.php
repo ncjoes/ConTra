@@ -28,6 +28,14 @@ if ($stage == 3) {
 
     <!-- Styles -->
     <link href="css/app.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            font-family: Cambria, sans-serif;
+        }
+        .margin-top-4em{
+            margin-top: 4em;
+        }
+    </style>
 
     <script src="js/app.js" type="text/javascript"></script>
     <script src="js/app.utils.js" type="text/javascript"></script>
@@ -59,7 +67,7 @@ if ($stage == 3) {
                                     <div class="col-sm-9">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" value="" name="use_headers">
+                                                <input type="checkbox" value="" name="use_headers" checked>
                                                 Use first row as column headers
                                             </label>
                                         </div>
