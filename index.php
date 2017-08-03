@@ -224,7 +224,7 @@ if ($stage == 3) {
     <?php
     if ($stage == 3) {
         ?>
-        <h2 class="page-header">Results</h2>
+        <h2 class="page-header">Results <strong class="pull-right small">Time: <?= $compute_time; ?> seconds</strong></h2>
         <div class="row">
             <div class="col-xs-12">
                 <div class="table-responsive">
@@ -314,7 +314,7 @@ if ($stage == 3) {
         var count = <?= $rowCount; ?>;
         var badRows = <?= count($badRows); ?>;
         var goodRows = count - badRows;
-        var badRowsRatio = realRound((badRows / count * 100), 2);
+        var badRowsRatio = realRound((badRows / count * 100), 4);
         var data = {
           labels: [
             badRows + " Contradicting Data (" + badRowsRatio + "%)",

@@ -15,6 +15,10 @@ $IN = $_POST;
 $stage = isset($IN['stage']) ? $IN['stage'] : 1;
 $title = 'Upload CSV File';
 
+//Computation time
+$compute_time = 0;
+$start_time = microtime(true);
+
 switch ($stage) {
     case 1: {
         if (isset($_FILES['file'])) {
@@ -124,3 +128,7 @@ switch ($stage) {
     break;
     }
 }
+
+//Calculate computation time
+$end_time = microtime(true);
+$compute_time = $end_time-$start_time;
